@@ -23,6 +23,12 @@ void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color
  
 void setup()
 {
+    // pinMode(2,OUTPUT);
+    // digitalWrite(2,HIGH);
+
+    pinMode(13,OUTPUT);
+    digitalWrite(13,HIGH);
+
     tft.init();         //初始化
     tft.setRotation(2); //屏幕旋转方向（横向）
     lv_init();
@@ -39,7 +45,7 @@ void setup()
     lv_disp_drv_register(&disp_drv);
  
     /*获取LVGL版本信息*/
-    String LVGL_Arduino = "RICO";
+    String LVGL_Arduino = "RICO version-0.0.1";
     // LVGL_Arduino += String('V') + lv_version_major() + "." + lv_version_minor() + "." + lv_version_patch(); //版本
     lv_obj_t *label = lv_label_create(lv_scr_act());
     lv_label_set_text(label, LVGL_Arduino.c_str());
