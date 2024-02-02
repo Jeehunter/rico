@@ -24,7 +24,7 @@
 #endif
 
 // bilibili粉丝APP
-#define APP_BILIBILI_FANS_USE 1
+#define APP_BILIBILI_FANS_USE 0
 #if APP_BILIBILI_FANS_USE
 #include "app/bilibili_fans/bilibili.h"
 #endif
@@ -91,7 +91,7 @@
 #endif
 
 // 股票行情查看APP
-#define APP_STOCK_MARKET_USE 1
+#define APP_STOCK_MARKET_USE 0
 #if APP_STOCK_MARKET_USE
 #include "app/stockmarket/stockmarket.h"
 #endif
@@ -105,7 +105,7 @@
 
 // 天气(旧)APP
 // 如flash空间不够，首选配置天气app二选一，腾出大量flash空间
-#define APP_WEATHER_OLD_USE 1
+#define APP_WEATHER_OLD_USE 0
 #if APP_WEATHER_OLD_USE
 #include "app/weather_old/weather_old.h"
 #endif

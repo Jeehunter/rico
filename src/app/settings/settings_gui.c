@@ -102,11 +102,11 @@ void display_settings(const char *cur_ver, const char *new_ver, lv_scr_load_anim
 {
     display_settings_init();
 
-    lv_label_set_text(title_label, "#00ff00 All\tin\tone#");
+    lv_label_set_text(title_label, "#ff4400 rico\tcubic#");
 
-    lv_label_set_text_fmt(cur_ver_label, "Now Version:  #ff0000 %s#", cur_ver);
+    lv_label_set_text_fmt(cur_ver_label, "Version:  #ff0000 %s#", cur_ver);
 
-    lv_label_set_text(qq_label, "AIO QQ: 755143193");
+    lv_label_set_text(qq_label, "niejihang@qq.com");
 
     if (strcmp(cur_ver, &new_ver[2]) < 0)
     {
